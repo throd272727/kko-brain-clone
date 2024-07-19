@@ -102,7 +102,7 @@
   opacity: 0;
   z-index: 999;
   background-color: rgba(0, 0, 0, 0.8);
-  transition: opacity 0 0.2s;
+  transition: opacity 0.2s;
 }
 .mb-menu.active {
   top: 60px;
