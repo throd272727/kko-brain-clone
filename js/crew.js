@@ -1,6 +1,6 @@
 window.addEventListener("load", function () {
  // 1. news.json 호출하고 성공하면
- fetch("api/news.json")
+ fetch("api/crews.json")
   .then((response) => {
    return response.json();
   })
@@ -39,8 +39,8 @@ window.addEventListener("load", function () {
   });
 
   // html 배치
-  const swNewsElement = document.querySelector(".news-list");
-  swNewsElement.innerHTML = tag;
-  return swNewsElement;
+  const crewElement = document.querySelector(".crew-list");
+  crewElement.innerHTML = tag;
+  return crewElement;
  };
 });

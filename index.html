@@ -1,160 +1,194 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>카카오브레인블로그 클론 코딩</title>
-    <!-- css -->
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/global.css" />
-    <link rel="stylesheet" href="css/common.css" />
-    <link rel="stylesheet" href="css/header.css" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/footer.css" />
-    <!-- swiper -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <!-- javascript -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="js/header.js"></script>
-    <script src="js/banner.js"></script>
-    <script src="js/news.js"></script>
-  </head>
-  <body>
-    <div class="wrap">
-      <!-- 상단 영역 시작 -->
-      <header class="header">
-        <div class="inner space-between align-items-center">
-          <a href="#" class="logo" aria-label="카카오브레인블로그">
-            <img
-              class="logo-kakao"
-              src="images/etc/logo-kakao.png"
-              alt="카카오브레인블로그 로고"
-            />
-            <!-- swiper 시작 -->
-            <div class="swiper sw-logo">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="images/etc/logo-blog01.png" alt="logo1" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="images/etc/logo-blog02.png" alt="logo2" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="images/etc/logo-blog03.png" alt="logo3" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="images/etc/logo-blog04.png" alt="logo4" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="images/etc/logo-blog05.png" alt="logo5" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="images/etc/logo-blog06.png" alt="logo6 />
-                </div>
-                <div class="swiper-slide">
-                  <img src="images/etc/logo-blog07.png" alt="logo7" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="images/etc/logo-blog08.png" alt="logo8" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="images/etc/logo-blog09.png" alt="logo9" />
-                </div>
-              </div>
-              <!-- <div class="swiper-button-next"></div>
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>카카오브레인블로그 클론 코딩</title>
+  <!-- css -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <!-- swiper -->
+  <link
+   rel="stylesheet"
+   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+  <!-- javascript -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/banner.js"></script>
+  <script src="js/news.js"></script>
+  <script src="js/crew.js"></script>
+ </head>
+ <body>
+  <div class="wrap">
+   <!-- 상단 영역 시작 -->
+   <header class="header">
+    <div class="inner space-between align-items-center">
+     <a href="#" class="logo" aria-label="카카오브레인블로그">
+      <img
+       class="logo-kakao"
+       src="images/etc/logo-kakao.png"
+       alt="카카오브레인블로그 로고"
+      />
+      <!-- swiper 시작 -->
+      <div class="swiper sw-logo">
+       <div class="swiper-wrapper">
+        <div class="swiper-slide">
+         <img src="images/etc/logo-blog01.png" alt="logo1" />
+        </div>
+        <div class="swiper-slide">
+         <img src="images/etc/logo-blog02.png" alt="logo2" />
+        </div>
+        <div class="swiper-slide">
+         <img src="images/etc/logo-blog03.png" alt="logo3" />
+        </div>
+        <div class="swiper-slide">
+         <img src="images/etc/logo-blog04.png" alt="logo4" />
+        </div>
+        <div class="swiper-slide">
+         <img src="images/etc/logo-blog05.png" alt="logo5" />
+        </div>
+        <div class="swiper-slide">
+         <img src="images/etc/logo-blog06.png" alt="logo6 />
+        </div>
+        <div class="swiper-slide">
+         <img src="images/etc/logo-blog07.png" alt="logo7" />
+        </div>
+        <div class="swiper-slide">
+         <img src="images/etc/logo-blog08.png" alt="logo8" />
+        </div>
+        <div class="swiper-slide">
+         <img src="images/etc/logo-blog09.png" alt="logo9" />
+        </div>
+       </div>
+       <!-- <div class="swiper-button-next"></div>
        <div class="swiper-button-prev"></div>
        <div class="swiper-pagination"></div> -->
-            </div>
-            <!-- swiper 끝 -->
-          </a>
-
-          <ul class="nav">
-            <li>
-              <a href="#" aria-label="카카오브레인 소식">소식</a>
-            </li>
-            <li>
-              <a href="#" aria-label="카카오브레인 팀 & 크루">팀 & 크루</a>
-            </li>
-            <li>
-              <a href="#" aria-label="카카오브레인 영입">영입</a>
-            </li>
-            <li class="mb-search">
-              <a
-                class="icon-bt icon-search"
-                href="#"
-                aria-label="카카오브레인 검색"
-                >검색</a
-              >
-            </li>
-            <li class="mb-more">
-              <a
-                class="icon-bt icon-more"
-                href="#"
-                aria-label="카카오브레인 반응형메뉴"
-                >메뉴</a
-              >
-            </li>
-          </ul>
-        </div>
-      </header>
-
-      <!-- 모바일용 메뉴 -->
-      <div class="mb-menu">
-        <div class="mb-inner">
-          <ul class="mb-nav">
-            <li>
-              <a href="#" aria-label="카카오브레인 소식">소식</a>
-            </li>
-            <li>
-              <a href="#" aria-label="카카오브레인 팀 & 크루">팀 & 크루</a>
-            </li>
-            <li>
-              <a href="#" aria-label="카카오브레인 영입">영입</a>
-            </li>
-          </ul>
-        </div>
       </div>
-      <!-- 상단 영역 끝 -->
+      <!-- swiper 끝 -->
+     </a>
 
-      <!-- 메인 영역 시작 -->
-      <main class="main">
-        <div class="inner">
-          <section class="main-top">
-            <div class="main-banner">
-              <!-- swiper 시작 -->
-              <div class="banner-wrap">
-                <div class="swiper swBanner">
-                  <div class="swiper-wrapper">
-                    <!-- JS Json 연동 -->
-                  </div>
-                  <div class="swiper-pagination"></div>
-                </div>
-              </div>
-              <!-- swiper 끝 -->
-            </div>
-            <div class="main-event">
-              <a href="#"></a>
-            </div>
-          </section>
-          <section class="main-bottom">
-            <div class="main-contents">
-              <div class="content-wrap">
-                <h3>NEW. 따끈따끈 새로 나온 글 🔥</h3>
-                <div class="content-list news-list"></div>
-                <!-- json 연동 -->
-              </div>
-            </div>
-            <div class="main-cards"></div>
-          </section>
-        </div>
-      </main>
-      <!-- 메인 영역 끝 -->
-
-      <!-- 하단 영역 시작 -->
-      <!-- 하단 영역 끝 -->
+     <ul class="nav">
+      <li>
+       <a href="#" aria-label="카카오브레인 소식">소식</a>
+      </li>
+      <li>
+       <a href="#" aria-label="카카오브레인 팀 & 크루">팀 & 크루</a>
+      </li>
+      <li>
+       <a href="#" aria-label="카카오브레인 영입">영입</a>
+      </li>
+      <li class="mb-search">
+       <a class="icon-bt icon-search" href="#" aria-label="카카오브레인 검색"
+        >검색</a
+       >
+      </li>
+      <li class="mb-more">
+       <a
+        class="icon-bt icon-more"
+        href="#"
+        aria-label="카카오브레인 반응형메뉴"
+        >메뉴</a
+       >
+      </li>
+     </ul>
     </div>
-  </body>
+   </header>
+
+   <!-- 모바일용 메뉴 -->
+   <div class="mb-menu">
+    <div class="mb-inner">
+     <ul class="mb-nav">
+      <li>
+       <a href="#" aria-label="카카오브레인 소식">소식</a>
+      </li>
+      <li>
+       <a href="#" aria-label="카카오브레인 팀 & 크루">팀 & 크루</a>
+      </li>
+      <li>
+       <a href="#" aria-label="카카오브레인 영입">영입</a>
+      </li>
+     </ul>
+    </div>
+   </div>
+   <!-- 상단 영역 끝 -->
+
+   <!-- 메인 영역 시작 -->
+   <main class="main">
+    <div class="inner">
+     <section class="main-top">
+      <div class="main-banner">
+       <!-- swiper 시작 -->
+       <div class="banner-wrap">
+        <div class="swiper swBanner">
+         <div class="swiper-wrapper">
+          <!-- JS Json 연동 -->
+         </div>
+         <div class="swiper-pagination"></div>
+        </div>
+       </div>
+       <!-- swiper 끝 -->
+      </div>
+      <div class="main-event">
+       <a href="#"></a>
+      </div>
+     </section>
+     <section class="main-bottom">
+      <div class="main-contents">
+       <div class="content-wrap">
+        <h3>NEW. 따끈따끈 새로 나온 글 🔥</h3>
+        <div class="content-list news-list">
+         <!-- json 연동 -->
+        </div>
+       </div>
+       <div class="content-ad">
+        <a href="#"></a>
+       </div>
+       <div class="content-wrap">
+        <h3>Editor’s Pick. 카카오브레인 크루를 소개합니다! 🏃🏻‍♀🏃‍♂🏃🏽 🔥</h3>
+        <div class="content-list crew-list">
+         <!-- json 연동 -->
+        </div>
+
+        <div class="bt-wrap">
+         <button class="bt">더보기</button>
+        </div>
+       </div>
+      </div>
+      <div class="main-cards">
+       <div class="main-cards-wrap">
+        <h3>폴더 📁</h3>
+        <div class="main-cards-slide">
+         <div class="swiper swCards">
+          <div class="swiper-wrapper">
+           <div class="swiper-slide">
+            <a href="#" data-id="1" class="main-card">
+             <p class="main-card-cate">
+              카드이름
+              <span>카드번호</span>
+             </p>
+            </a>
+           </div>
+          </div>
+         </div>
+        </div>
+
+        <div class="bt-wrap">
+         <button class="bt">폴더전체보기</button>
+        </div>
+       </div>
+      </div>
+     </section>
+    </div>
+   </main>
+   <!-- 메인 영역 끝 -->
+
+   <!-- 하단 영역 시작 -->
+   <!-- 하단 영역 끝 -->
+  </div>
+ </body>
 </html>
